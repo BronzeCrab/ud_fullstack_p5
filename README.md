@@ -12,6 +12,18 @@
 2. `sudo apt-get update` - to retrive new package list
 3. `sudo apt-get upgrade` - to update software, based on the list from previous command
 4. Make changes in `/etc/ssh/sshd_config` - set `Port 2200` and `PasswordAuthentication no`
+5. Configired ufw using `ufw`:
+
+> sudo ufw status
+  ufw default deny incoming
+  sudo ufw default allow outgoing
+  sudo ufw allow 2200
+  sudo ufw status
+  sudo ufw allow www
+  sudo ufw allow ntp
+
+
+> asgasssssssssssssssssssss
 * finger
 * apache2
 * postgresql
