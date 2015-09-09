@@ -23,8 +23,11 @@ sudo ufw allow ntp
 ufw enable
 ```
 6. Configure the local timezone to UTC: `dpkg-reconfigure tzdata`
-7. Install (like [here][id1]) and configure Apache to serve a Python mod_wsgi application. Added `WSGIScriptAlias / /var/www/html/myapp.wsgi` to `/etc/apache2/sites-enabled/000-default.conf` near form ending of `</VirtualHost>` block.
-8. 
+7. Install (like [here][id1]) and configure Apache to serve a Python mod_wsgi application. Added `WSGIScriptAlias / /var/www/html/myapp.wsgi` to `/etc/apache2/sites-enabled/000-default.conf` at the ending of `</VirtualHost>` block.
+8. Install and configure PostgreSQL like [here][id2]:
+  - Deinied remote connections, set `listen_addresses = 'localhost'` in file `/etc/postgresql/9.3/main/postgresql.conf`
+  - asg
+  - asgas
 
 ### List of third-party resources
 * https://www.digitalocean.com/community/tutorials/installing-mod_wsgi-on-ubuntu-12-04
