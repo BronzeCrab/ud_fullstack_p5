@@ -28,7 +28,7 @@ ufw enable
 8. Install and configure PostgreSQL like [here][id2]:
   - Deinied remote connections, set `listen_addresses = 'localhost'` in file<br> `/etc/postgresql/9.3/main/postgresql.conf`
   - Created user `catalog` like [here][id2] and set permissions (only ability to login) like [here][id3] and [here][id4]
-9. Install git `sudo apt-get install git`, clone my `ud_fullstack_p3` repo `` and setup your Catalog App project
+9. Install git `sudo apt-get install git`, clone my `ud_fullstack_p3` repo and setup my Catalog App project
 
 ### List of third-party resources
 * https://www.digitalocean.com/community/tutorials/installing-mod_wsgi-on-ubuntu-12-04
