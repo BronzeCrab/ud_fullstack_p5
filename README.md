@@ -15,15 +15,13 @@
 5. Configired ufw using `ufw`:
 
 > sudo ufw status
-  ufw default deny incoming
-  sudo ufw default allow outgoing
-  sudo ufw allow 2200
-  sudo ufw status
-  sudo ufw allow www
-  sudo ufw allow ntp
-
-
-> asgasssssssssssssssssssss
+  ufw default deny incoming<br>
+  sudo ufw default allow outgoing<br>
+  sudo ufw allow 2200<br>
+  sudo ufw status<br>
+  sudo ufw allow www<br>
+  sudo ufw allow ntp<br>
+  
 * finger
 * apache2
 * postgresql
