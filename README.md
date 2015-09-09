@@ -5,7 +5,7 @@
 #### SSH PORT
 2200
 ### Complete URL to application
-
+http://52.88.155.87
 ### A summary of software you installed and configuration changes made
 #### What I've done:
 1. added new user grader, created file `/etc/sudoers.d/grader` with necessary permissions. Like so: `adduser grader` File `/etc/sudoers.d/grader` has `grader ALL=(ALL) NOPASSWD:ALL` inside
@@ -30,7 +30,7 @@ ufw enable
   - Created user `catalog` like [here][id2] and set permissions (only ability to login) like [here][id3] and [here][id4]. Set password for `catalog` role: `sudo -i -u postgres`, then <br> `ALTER ROLE catalog WITH PASSWORD '123123';`
 9. Install git `sudo apt-get install git`, clone my `ud_fullstack_p3` repo and setup my Catalog App project like [here][id5]
 10. Install pip (`apt-get install python-pip`), sqlalchemy (`pip install SQLAlchemy`), utils (`pip install sqlalchemy-utils`), psycopg2 (`sudo apt-get install python-psycopg2`). Finally run `python database_setup.py` to create db tables.
-11. Configure apache2 like [here][id6]
+11. Configure apache2 like [here][id6] and in [official falsk docs][id5]
 12. Installing Flask `sudo pip install Flask`, `apt-get install python-oauth2client`
 
 ### List of third-party resources
