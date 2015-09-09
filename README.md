@@ -31,7 +31,7 @@ ufw enable
 9. Install git `sudo apt-get install git`, clone my `ud_fullstack_p3` repo and setup my Catalog App project like [here][id5]
 10. Install pip (`apt-get install python-pip`), sqlalchemy (`pip install SQLAlchemy`), utils (`pip install sqlalchemy-utils`), psycopg2 (`sudo apt-get install python-psycopg2`). Finally run `python database_setup.py` to create db tables.
 11. Configure apache2 like [here][id6]
-12. Installing Flask `sudo pip install Flask`
+12. Installing Flask `sudo pip install Flask`, `apt-get install python-oauth2client`
 
 ### List of third-party resources
 * https://www.digitalocean.com/community/tutorials/installing-mod_wsgi-on-ubuntu-12-04
@@ -43,6 +43,7 @@ ufw enable
 * http://askubuntu.com/questions/138423/how-do-i-change-my-timezone-to-utc-gmt
 * http://flask.pocoo.org/docs/0.10/deploying/mod_wsgi/
 * http://askubuntu.com/questions/122330/unable-to-restart-apache-getting-error-apache2-bad-user-name-apache-run-use
+* https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 [id1]: https://www.digitalocean.com/community/tutorials/installing-mod_wsgi-on-ubuntu-12-04
 [id2]: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04
 [id3]: https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-manage-grant-permissions-in-postgresql-on-a-vps--2
