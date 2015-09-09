@@ -49,4 +49,4 @@ ufw enable
 [id3]: https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-manage-grant-permissions-in-postgresql-on-a-vps--2
 [id4]: http://www.postgresql.org/docs/9.0/static/sql-alterrole.html
 [id5]: http://flask.pocoo.org/docs/0.10/deploying/mod_wsgi/
-[id6]: http://askubuntu.com/questions/122330/unable-to-restart-apache-getting-error-apache2-bad-user-name-apache-run-use
+[id6]: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
