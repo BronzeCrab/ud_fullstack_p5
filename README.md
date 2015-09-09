@@ -5,9 +5,6 @@
 #### SSH PORT
 2200
 ### Complete URL to application
-
-This is a normal paragraph:
-    asgasgasga
 ### A summary of software you installed and configuration changes made
 #### What I've done:
 1. added new user grader, created file /etc/sudoers.d/grader with necessary permissions
@@ -15,13 +12,13 @@ This is a normal paragraph:
 3. `sudo apt-get upgrade` - to update software, based on the list from previous command
 4. Make changes in `/etc/ssh/sshd_config` - set `Port 2200` and `PasswordAuthentication no`
 5. Configired ufw using `ufw`:
-6.sudo ufw status
+6.```sudo ufw status
   ufw default deny incoming<br>
   sudo ufw default allow outgoing<br>
   sudo ufw allow 2200<br>
   sudo ufw status<br>
   sudo ufw allow www<br>
-  sudo ufw allow ntp<br>
+  sudo ufw allow ntp<br>```
 
 
   afaa
