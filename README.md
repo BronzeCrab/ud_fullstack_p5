@@ -13,14 +13,16 @@
 3. `sudo apt-get upgrade` - to update software, based on the list from previous command
 4. Make changes in `/etc/ssh/sshd_config` - set `Port 2200` and `PasswordAuthentication no`
 5. Configired ufw using `ufw`:
-
-> sudo ufw status
+6.sudo ufw status
   ufw default deny incoming<br>
   sudo ufw default allow outgoing<br>
   sudo ufw allow 2200<br>
   sudo ufw status<br>
   sudo ufw allow www<br>
   sudo ufw allow ntp<br>
+
+
+  afaa
   
 * finger
 * apache2
