@@ -19,7 +19,8 @@ sudo ufw default allow outgoing
 sudo ufw allow 2200
 sudo ufw status
 sudo ufw allow www
-sudo ufw allow ntp```
+sudo ufw allow ntp
+```
 
 * finger
 * apache2
