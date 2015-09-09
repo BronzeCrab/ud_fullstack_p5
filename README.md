@@ -32,6 +32,7 @@ ufw enable
 ### List of third-party resources
 * https://www.digitalocean.com/community/tutorials/installing-mod_wsgi-on-ubuntu-12-04
 * https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04
+* https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-manage-grant-permissions-in-postgresql-on-a-vps--2
 * http://superuser.com
 * http://markdowntutorial.com
 * http://askubuntu.com/questions/138423/how-do-i-change-my-timezone-to-utc-gmt
