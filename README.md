@@ -31,6 +31,7 @@ ufw enable
 9. Install git `sudo apt-get install git`, clone my `ud_fullstack_p3` repo and setup my Catalog App project like [here][id5]
 10. Install pip (`apt-get install python-pip`), sqlalchemy (`pip install SQLAlchemy`), utils (`pip install sqlalchemy-utils`), psycopg2 (`sudo apt-get install python-psycopg2`). Finally run `python database_setup.py` to create db tables.
 11. Configure apache2 like [here][id6]
+12. Installing Flask `sudo pip install Flask`
 
 ### List of third-party resources
 * https://www.digitalocean.com/community/tutorials/installing-mod_wsgi-on-ubuntu-12-04
