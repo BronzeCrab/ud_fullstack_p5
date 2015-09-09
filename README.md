@@ -22,7 +22,7 @@ sudo ufw allow ntp
 ufw enable
 ```
 6. Configure the local timezone to UTC: `dpkg-reconfigure tzdata`
-7. Install and configure Apache to serve a Python mod_wsgi application. Added `WSGIScriptAlias / /var/www/html/myapp.wsgi` to `/etc/apache2/sites-enabled/000-default.conf` near form ending of `</VirtualHost>` block.
+7. Install (like [id]) and configure Apache to serve a Python mod_wsgi application. Added `WSGIScriptAlias / /var/www/html/myapp.wsgi` to `/etc/apache2/sites-enabled/000-default.conf` near form ending of `</VirtualHost>` block.
 
 * finger
 * apache2
@@ -35,3 +35,5 @@ ufw enable
 * http://superuser.com
 * http://markdowntutorial.com
 * http://askubuntu.com/questions/138423/how-do-i-change-my-timezone-to-utc-gmt
+[id1]: https://www.digitalocean.com/community/tutorials/installing-mod_wsgi-on-ubuntu-12-04
+[id2]: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04
