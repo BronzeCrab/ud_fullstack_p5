@@ -13,13 +13,14 @@
 4. Make changes in `/etc/ssh/sshd_config` - set `Port 2200` and `PasswordAuthentication no`
 5. Configired ufw using `ufw`:
 
-```sudo ufw status
-  ufw default deny incoming
-  sudo ufw default allow outgoing
-  sudo ufw allow 2200
-  sudo ufw status
-  sudo ufw allow www
-  sudo ufw allow ntp```
+```{r tidy=FALSE}
+sudo ufw status
+ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow 2200
+sudo ufw status
+sudo ufw allow www
+sudo ufw allow ntp```
   
 6. aa
 7. 
