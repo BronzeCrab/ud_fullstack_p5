@@ -30,7 +30,7 @@ ufw enable
 * 
 
 ### List of third-party resources
-* https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu
+* https://www.digitalocean.com/community/tutorials/installing-mod_wsgi-on-ubuntu-12-04
 * https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04
 * http://superuser.com
 * http://markdowntutorial.com
