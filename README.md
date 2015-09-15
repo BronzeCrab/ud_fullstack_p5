@@ -1,7 +1,7 @@
 ## ud_fullstack_p5
 ### The IP address and SSH port so your server
 #### IP
-52.88.155.87
+52.89.23.250
 #### SSH PORT
 2200
 ### Complete URL to application
