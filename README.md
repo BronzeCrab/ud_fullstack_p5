@@ -31,7 +31,11 @@ ufw enable
 
 6. Configure the local timezone to UTC: `dpkg-reconfigure tzdata`, choose `etc` at the bottom of the list, then `UTC`.
 7. Install (like [here][id1]) and configure Apache to serve a Python mod_wsgi application. Added configs based on [this][id5] to `/etc/apache2/sites-enabled/000-default.conf` at the ending of `</VirtualHost>` block. Created `/var/www/myapp.wsgi` file and add only one line to it `from project import app as application`.
-8. Install and configure PostgreSQL like [here][id2]:
+8. Install and configure PostgreSQL like [here][id2] and solve problen with locales:
+  - `sudo locale-gen ru_RU.UTF-8`
+  - `sudo locale-gen en_US.UTF-8`
+  - `dpkg-reconfigure locales`
+  - `pg_createcluster 9.3 main --start`
   - Deinied remote connections, set `listen_addresses = 'localhost'` in file<br> `/etc/postgresql/9.3/main/postgresql.conf`
   - Created user `catalog` like [here][id2] and set permissions (only ability to login) like [here][id3] and [here][id4]. Set password for `catalog` role: `sudo -i -u postgres`, then <br> `ALTER ROLE catalog WITH PASSWORD '123123';`
 9. Install git `sudo apt-get install git`, clone my `ud_fullstack_p3` repo and setup my Catalog App project like [here][id5]
