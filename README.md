@@ -30,7 +30,7 @@ ufw enable
 ```
 
 6. Configure the local timezone to UTC: `dpkg-reconfigure tzdata`, choose `etc` at the bottom of the list, then `UTC`.
-7. Install (like [here][id1]) and configure Apache to serve a Python mod_wsgi application. Added configs based on [this][id5] to `/etc/apache2/sites-enabled/000-default.conf` at the ending of `</VirtualHost>` block. Created `/var/www/html/myapp.wsgi` file and add only one line to it `from project import app as application`.
+7. Install (like [here][id1]) and configure Apache to serve a Python mod_wsgi application. Added configs based on [this][id5] to `/etc/apache2/sites-enabled/000-default.conf` at the ending of `</VirtualHost>` block. Created `/var/www/myapp.wsgi` file and add only one line to it `from project import app as application`.
 8. Install and configure PostgreSQL like [here][id2]:
   - Deinied remote connections, set `listen_addresses = 'localhost'` in file<br> `/etc/postgresql/9.3/main/postgresql.conf`
   - Created user `catalog` like [here][id2] and set permissions (only ability to login) like [here][id3] and [here][id4]. Set password for `catalog` role: `sudo -i -u postgres`, then <br> `ALTER ROLE catalog WITH PASSWORD '123123';`
