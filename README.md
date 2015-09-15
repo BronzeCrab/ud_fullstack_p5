@@ -31,7 +31,7 @@ ufw enable
 
 6. Configure the local timezone to UTC: `dpkg-reconfigure tzdata`, choose `etc` at the bottom of the list, then `UTC`.
 7. Install (like [here][id1]) and configure Apache to serve a Python mod_wsgi application. Added configs based on [this][id5] to `/etc/apache2/sites-enabled/000-default.conf` at the ending of `</VirtualHost>` block. Created `/var/www/myapp.wsgi` file and add only one line to it `from project import app as application`.
-8. Install and configure PostgreSQL like [here][id2] and solve problen with locales:
+8. Install and configure PostgreSQL like [here][id2] and solve problem with locales (postgresql won't start):
   - `sudo locale-gen ru_RU.UTF-8`
   - `sudo locale-gen en_US.UTF-8`
   - `dpkg-reconfigure locales`
