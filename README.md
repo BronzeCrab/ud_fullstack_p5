@@ -16,7 +16,7 @@ http://52.89.43.247
 5. `chown grader .ssh`
 6. `chown grader .ssh/authorized_keys`
 6. `mv .ssh /home/grader`
-4. Make changes in `/etc/ssh/sshd_config`, set `Port 2200` and `PasswordAuthentication no`
+4. Make changes in `/etc/ssh/sshd_config`, set `Port 2200`, `PasswordAuthentication no`, `PermitRootLogin no`
 5. Configired ufw using `ufw`:
 
   ```{r tidy=FALSE}
