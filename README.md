@@ -11,6 +11,9 @@ http://52.89.23.250
 1. added new user grader, created file `/etc/sudoers.d/grader` with necessary permissions. Like so: `adduser grader` File `/etc/sudoers.d/grader` has `grader ALL=(ALL) NOPASSWD:ALL` inside
 2. `sudo apt-get update` - to retrive new package list
 3. `sudo apt-get upgrade` - to update software, based on the list from previous command
+4. `apt-get install acl`
+5. `setfacl -m "u:grader:r--" ssh`
+6. `mv .ssh /home/grader`
 4. Make changes in `/etc/ssh/sshd_config`, set `Port 2200` and `PasswordAuthentication no`
 5. Configired ufw using `ufw`:
 
@@ -23,6 +26,7 @@ sudo ufw allow www
 sudo ufw allow ntp
 ufw enable
 ```
+
 6. Configure the local timezone to UTC: `dpkg-reconfigure tzdata`, choose `etc` at the bottom of the list, then `UTC`.
 7. Install (like [here][id1]) and configure Apache to serve a Python mod_wsgi application. Added configs based on [this][id5] to `/etc/apache2/sites-enabled/000-default.conf` at the ending of `</VirtualHost>` block. Created `/var/www/html/myapp.wsgi` file.
 8. Install and configure PostgreSQL like [here][id2]:
