@@ -38,6 +38,7 @@ ufw enable
   - `pg_createcluster 9.3 main --start`
   - Deinied remote connections, set `listen_addresses = 'localhost'` in file<br> `/etc/postgresql/9.3/main/postgresql.conf`
   - Created user `catalog` like [here][id2] and set permissions (only ability to login) like [here][id3] and [here][id4]. Set password for `catalog` role: `sudo -i -u postgres`, then <br> `ALTER ROLE catalog WITH PASSWORD '123123';`
+  - Createdb db `catalogdb` as postgres user `createdb ctalogdb`
 9. Install git `sudo apt-get install git`, clone my `ud_fullstack_p3` repo and setup my Catalog App project like [here][id5]
 10. Install pip (`apt-get install python-pip`), sqlalchemy (`pip install SQLAlchemy`), utils (`pip install sqlalchemy-utils`), psycopg2 (`sudo apt-get install python-psycopg2`). Finally run `python database_setup.py` to create db tables.
 11. Configure apache2 like [here][id6] and in [official falsk docs][id5]
