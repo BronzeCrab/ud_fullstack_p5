@@ -5,7 +5,7 @@
 #### SSH PORT
 2200
 ### Complete URL to application
-http://52.88.155.87
+http://52.89.23.250
 ### A summary of software you installed and configuration changes made
 #### What I've done:
 1. added new user grader, created file `/etc/sudoers.d/grader` with necessary permissions. Like so: `adduser grader` File `/etc/sudoers.d/grader` has `grader ALL=(ALL) NOPASSWD:ALL` inside
