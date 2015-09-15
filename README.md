@@ -1,18 +1,20 @@
 ## ud_fullstack_p5
 ### The IP address and SSH port so your server
 #### IP
-52.89.23.250
+52.89.43.247
 #### SSH PORT
 2200
 ### Complete URL to application
-http://52.89.23.250
+http://52.89.43.247
 ### A summary of software you installed and configuration changes made
 #### What I've done:
 1. added new user grader, created file `/etc/sudoers.d/grader` with necessary permissions. Like so: `adduser grader` File `/etc/sudoers.d/grader` has `grader ALL=(ALL) NOPASSWD:ALL` inside
 2. `sudo apt-get update` - to retrive new package list
 3. `sudo apt-get upgrade` - to update software, based on the list from previous command
-4. `apt-get install acl`
-5. `setfacl -m "u:grader:r--" ssh`
+4. `chgrp grader .ssh`
+5. `chgrp grader .ssh/authorized_keys`
+5. `chown grader .ssh`
+6. `chown grader .ssh/authorized_keys`
 6. `mv .ssh /home/grader`
 4. Make changes in `/etc/ssh/sshd_config`, set `Port 2200` and `PasswordAuthentication no`
 5. Configired ufw using `ufw`:
